@@ -1,0 +1,189 @@
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Muli, sans-serif;
+}
+
+body {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #FF5722;
+      background: white;
+}
+
+#header-top{
+      display: flex;
+      color: #FF5722;
+      justify-content: space-around;
+      letter-spacing: 2px;
+}
+
+#container {
+      margin-top: 3%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+#searchHeroBar {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+}
+
+#searchHeroBar:focus{
+      border: none;
+}
+
+#displayHeroSearchResults {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+}
+
+.loading-and-error-font {
+      letter-spacing: 1px;
+      font-style: italic;
+      color: #FF5722;
+}
+
+
+.hero-card {
+      box-shadow: 2px 2px 10px lightgray;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 25%;
+      height: 350px;
+}
+
+a:link {
+      color: #FF5722;
+      text-decoration: none;
+}
+
+a:visited {
+      color: #FF5722;
+      text-decoration: none;
+
+}
+
+a:hover {
+      color: #FF5722;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+a:active {
+      color: #FF5722;
+      text-decoration: none;
+}
+
+::placeholder {
+      font-size: 1.8rem;
+      color: lightgray;
+}
+
+
+
+@media only screen and (min-width : 900px) {
+      #header-top {
+            padding: 2%;
+            box-shadow: 0 0 10px lightgrey;
+            font-size: 1.2rem;
+      }
+
+      #heading {
+            font-size: 4rem;
+            letter-spacing: 8px;
+            font-weight: 900;
+            margin-bottom: 3%;
+      }
+
+      #info {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: rgb(111, 147, 35);
+
+      }
+
+      #searchHeroBar {
+            margin-top: 3%;
+            position: relative;
+            width: 50%;
+      }
+
+      #searchHero {
+            position: relative;
+            width: 100%;
+            padding: 3%;
+            height: 2%;
+            font-size: 1.5rem;
+            border-radius: 40px;
+            color: white;
+            background-image: linear-gradient(to right, #f12711, #f5af19);
+            border: none;     
+      }
+
+      #displayHeroSearchResults {
+            flex-direction: row;
+            width: 80%;
+            margin: 2%;
+
+      }
+
+      .hero-card {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 1%;
+            margin: 2%;
+            color: #FF5722;
+      }
+
+      .hero-card:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px #FF5722;
+      }
+
+      .hero-card img {
+            width: 200px;
+            margin-top: 2%;
+            height: 200px;
+            box-shadow: 0 0 50px lightgrey;
+
+      }
+
+      .fav-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2%;
+            padding: 15px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 1px solid white;
+            border-radius: 3px;
+      }
+
+
+
+}
