@@ -95,5 +95,5 @@ function deleteHeroFromFavourites(event, id, favHeroCard) {
 
 function currHero(heroID) {
       myLocalStorage.setItem('showSuperHero', heroID);
-      window.location.assign("../HTML-codes/superhero.html");
+      window.location.assign("../superhero.html");
 }
