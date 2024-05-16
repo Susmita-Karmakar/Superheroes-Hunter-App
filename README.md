@@ -15,7 +15,7 @@ There are 3 pages:
 
 <h2>Interfaces will look like below :</h2>
 
-<hr>This is the view of the home page<hr>
+This is the view of the home page<hr>
 
 ![image](https://github.com/Susmita-Karmakar/Superheroes-Hunter-App/assets/67648510/9c734939-5906-4a9b-80db-0ad4dcb9ce04)
 
