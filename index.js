@@ -3,8 +3,6 @@ let searchBar = document.getElementById("searchHero");
 console.log(searchBar.value);
 searchBar.addEventListener('keyup', getSearchedSuperHeroes);
 
-
-
 //creating and acessing local storage for user's seemless experience
 
 let myLocalStorage = window.localStorage;
@@ -17,7 +15,6 @@ if (!myLocalStorage.getItem('superheroID')) {
 }
 
 myLocalStorage.setItem('showSuperHero', '');
-
 
 //function display all the search suggested super heroes
 
@@ -42,7 +39,6 @@ function getSearchedSuperHeroes() {
                         var data = JSON.parse(this.responseText);
                         console.log(data);
 
-
                         //to handle backspace or no input value errors in the search Bar
 
                         if (data.response === "error") {
@@ -59,7 +55,6 @@ function getSearchedSuperHeroes() {
                         //reset the display container after showing results
 
                         displaySearchedHeroesResult.innerHTML = '';
-
 
                         //adding all the results to the DOM
 

@@ -7,20 +7,18 @@ let favouriteSection = document.getElementById("displayFavourites");
 //creating and accessing local storage for user's seemless experience
 
 var myLocalStorage = window.localStorage;
-
 var arr = JSON.parse(myLocalStorage.getItem("superheroID"));
 
 for (let hero_id of arr) {
-
       var url = 'https://superheroapi.com/api.php/1500237820345742/' + hero_id;
 
       //creating a new XML HTTP request
 
       var apiRequest = new XMLHttpRequest();
 
-
       apiRequest.onreadystatechange = function () {
             console.log(this.status);
+
             //if request is made successfully with status as 200 and in ready state 4
             if (this.readyState == 4 && this.status == 200) {
 
@@ -29,7 +27,6 @@ for (let hero_id of arr) {
                   console.log(data);
 
                   let favHeroCard = document.createElement('div');
-
 
                   favHeroCard.className = 'favourite-hero-card';
 
@@ -42,14 +39,11 @@ for (let hero_id of arr) {
                   //adding hero's details 
 
                   let nameOfHero = document.createElement('span');
-
                   let infoOfHero = document.createTextNode(data.name);
 
                   nameOfHero.appendChild(infoOfHero);
 
-
                   let imageOfHero = document.createElement('img');
-
 
                   imageOfHero.setAttribute(
                         "src",
@@ -74,7 +68,6 @@ for (let hero_id of arr) {
       apiRequest.open('get', url, true);
       apiRequest.send();
 }
-
 
 function deleteHeroFromFavourites(event, id, favHeroCard) {
       for (let he in arr) {

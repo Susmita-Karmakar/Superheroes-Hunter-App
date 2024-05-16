@@ -1,7 +1,5 @@
 var myLocalStorage = window.localStorage;
-
 let hero_id = myLocalStorage.getItem('showSuperHero');
-
 var apiRequest = new XMLHttpRequest();
 
 var url = 'https://superheroapi.com/api.php/1500237820345742/' + hero_id;
@@ -48,8 +46,6 @@ apiRequest.onreadystatechange = function () {
             } else {
                   document.getElementById('combat_stats').innerHTML = '-';
             }
-
-
 
 
             //setting name and image of the hero
